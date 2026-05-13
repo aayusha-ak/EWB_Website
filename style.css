@@ -4,6 +4,7 @@
 }
 
 /* navigation bar*/
+
 .topnav {
   overflow: hidden;
   align-items: center;
@@ -19,6 +20,13 @@
   text-decoration: none;
   
   
+  
+}
+
+.ewblogo {
+  width: 200px;
+  
+
 }
 
 .navLinks a {
@@ -32,19 +40,21 @@
   padding-top: 7px;
   padding-bottom: 7px;
   font-family: 'Podkova', serif;
+  transition: background-color 0.3s;
 }
 
 .navLinks a:hover {
   background-color: #4e8aca;
   color : white;
+  cursor:pointer;
 }
 
-
-
-
+/**********************************************/
 /* code for hamburger icon for smaller screens*/
 .menuIcon {
   display: none;
+  width: 3px;
+  height: 3px;
 }
 
 .hamMenu {
@@ -59,12 +69,9 @@
   text-align: center;
   font-family: 'Podkova', serif;  
   background-color: #4e8aca;
+  
 }
 
-.hamMenu a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 .navContainer{
   display:none;
@@ -93,6 +100,7 @@
   }
 }
 
+/****************************/
 /*Main Photo in the homePage*/
 .home_after_navbar {
   position:relative;
@@ -114,7 +122,7 @@
   display:flex;
   align-items: center;
   position: absolute;
-  color: #000000;
+  color: black;
   background-color: rgb(255, 255, 255, 0.3);
   bottom: 350px;
   font-size: 25px;
@@ -142,6 +150,97 @@ h1,h2 {
   text-align: right;
   font-family: Montserrat, serif;
   text-transform: uppercase;
+  
+}
+
+/************************/
+/*Homepage about us section*/
+
+.homeHeading {
+  font-family: Radley, sans-serif;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+  
+}
+
+.aboutus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.homeparagraph {
+  width:40%;
+  word-wrap: break-word;
+ 
+
+}
+
+.aboutgallery {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2, 250px);
+
+}
+
+/* image container */
+.aboutimage {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  
+  
+}
+
+/* actual image */
+.aboutimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imagecaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 18px;
+  font-family: Radley, sans-serif;
+  text-align: center;
 }
 
 
+@media screen and (max-width: 980px) {
+
+  .aboutus {
+    flex-direction: column;
+
+  }
+
+  .homeparagraph {
+  width:100%;
+  word-wrap: break-word;
+
+  }
+
+  .aboutgallery{
+    grid-template-columns: repeat(2, 205px);
+    grid-template-rows: repeat(2, 205px);
+    justify-content: center;
+    margin-top: 15px;
+
+  }
+}
+
+/************************/
+/*Homepage Current and Past Projects section*/
