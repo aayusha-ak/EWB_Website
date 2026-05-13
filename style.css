@@ -92,3 +92,56 @@
     display:flex;
   }
 }
+
+/*Main Photo in the homePage*/
+.home_after_navbar {
+  position:relative;
+  display:flex;
+  align-content: center;
+}
+
+.homeMainPhoto {
+  display: flex;
+  height: 500px;
+  width: 100%; 
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  
+}
+
+.homeTitle {
+  display:flex;
+  align-items: center;
+  position: absolute;
+  color: #000000;
+  background-color: rgb(255, 255, 255, 0.3);
+  bottom: 350px;
+  font-size: 25px;
+  width: fit-content;
+  left:50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  font-family: Playfair Display, serif ;
+  border-radius: 10px;
+  padding:5px;
+}
+
+h1,h2 {
+  margin:5px;
+  white-space: nowrap;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+
+.homecaption {
+  color: black;
+  margin-top: 5px;
+  margin-right:5px;
+  text-align: right;
+  font-family: Montserrat, serif;
+  text-transform: uppercase;
+}
+
+
