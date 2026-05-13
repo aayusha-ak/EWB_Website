@@ -158,7 +158,7 @@ h1,h2 {
 
 .homeHeading {
   font-family: Radley, sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 50px;
   margin-left: 40px;
   margin-right: 40px;
@@ -177,6 +177,8 @@ h1,h2 {
 .homeparagraph {
   width:40%;
   word-wrap: break-word;
+  font-family: 'Podkova', serif;
+  font-size: 20px;
  
 
 }
@@ -308,3 +310,54 @@ h1,h2 {
 
 /************************/
 /*Homepage Support section*/
+
+.supportSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  margin-left: 40px;
+  margin-right: 60px;
+  text-align: center;
+  font-family: 'Podkova', serif; 
+  font-family: Podkova;
+  align-items: center;
+  
+}
+
+.supportparagraph{
+  width:40%;
+  word-wrap: break-word;
+  font-size: 20px;
+  
+
+  
+}
+
+.sponorshippackage  {
+  background-color: #ede2d1;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  width: 40%;
+  font-size: 27px;
+
+}
+
+.sponorshippackage:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.35);
+  transform: translateX(10px);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.wtc {
+  font-family: 'League Spartan', serif;
+  text-align:center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom:30px;
+  font-weight: bold;
+}
