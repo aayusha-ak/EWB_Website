@@ -49,6 +49,11 @@
   cursor:pointer;
 }
 
+a.active {
+  background-color: #4e8aca;
+  color : white;
+}
+
 /**********************************************/
 /* code for hamburger icon for smaller screens*/
 .menuIcon {
@@ -487,4 +492,46 @@ h1,h2 {
   }
 
 
+}
+
+
+.eventGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+div.polaroid {
+  width: 280px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  text-align: center;
+  font-family: 'Podkova', serif;
+  color: black;
+}
+
+div.rotate_right {
+  float: left;
+  transform: rotate(7deg);
+}
+
+div.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+}
+
+div.polaroid:hover {
+  cursor:pointer;
+  transform:scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  filter: brightness(85%);
+  color: rgb(1, 51, 112);
 }
