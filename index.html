@@ -32,35 +32,38 @@
                     </div>
                     
                     <div class = "navLinks">
-                        <a href = "index.html">Home</a>
+                        <a href = "#homeSection">Home</a>
                     </div>
                     <div class = "navLinks">
-                        <a href = "aboutPage.html">About</a>
+                        <a href = "#aboutusSection">About</a>
                     </div>
                     <div class = "navLinks">
-                        <a href = "projectsPage.html">Projects</a>
+                        <a href = "#projectsSection">Projects</a>
                     </div>
                     <div class = "navLinks">
-                        <a href = "eventsPage.html">Events</a>
+                        <a href = "#eventsSection">Events</a>
                     </div>
                     <div class = "navLinks">
-                        <a href = "supportPage.html">support</a>
-                    </div>        
+                        <a href = "#supportSection">support</a>
+                    </div> 
+                    
+                    <!--Hamburger menu icon, only smaller screens-->
+                    <div class = "hamMenu" id="hamMenu">
+                        <a href="#homeSection">Home</a>
+                        <a href="#aboutusSection">About</a>
+                        <a href="#projectsSection">Projects</a>
+                        <a href="#eventsSection">Events</a>
+                        <a href="#supportSection">Support</a>
+                    </div>
                     
             </nav>
-            <!--Hamburger menu icon, only smaller screens-->
-                    <div class = "hamMenu" id="hamMenu">
-                        <a href="index.html">Home</a>
-                        <a href="aboutPage.html">About</a>
-                        <a href="projectsPage.html">Projects</a>
-                        <a href="eventsPage.html">Events</a>
-                        <a href="supportPage.html">Support</a>
-                    </div>
+            
+                    
         
 
         <!--Main content of the page-->
         <main>
-            <section>
+            <section class = "main" id = "homeSection">
                 <div class = "home_after_navbar">
                     
                     <img src = "images/mainPhoto_homepage.JPG" alt = "mainPhoto" class = "homeMainPhoto">
@@ -78,7 +81,7 @@
 
 
             <!--About Us Section-->
-            <section>
+            <section class = "main" id = "aboutusSection">
                 <h1 class = "homeHeading">
                     About US
                 </h1>
@@ -120,7 +123,7 @@
 
 
             <!--Current and past projects-->
-            <section>
+            <section class = "main" id = "projectsSection">
 
                 <h1 class="homeHeading">
                     Current and Past Projects
@@ -128,7 +131,7 @@
 
                 <div class="homeproject_gallery">
 
-                    <a href="projectsPage.html" class="projectCard">
+                    
 
                         <div class="projectImage">
                             <img src="images/ewb_currentProject.png" alt="San Isidro de Punin">
@@ -136,11 +139,17 @@
                             <div class="projectCaption">
                                 San Isidro de Punin
                             </div>
+                            <div class="projectDetail">
+                                <h1> San Isidro de Punin </h1>
+                                <p>
+                                    about project
+                                </p>
+                            </div>
                         </div>
 
-                    </a>
+                    
 
-                    <a href="projectsPage.html" class="projectCard">
+                    
 
                         <div class="projectImage">
                             <img src="images/ewbMalawi.png" alt="Salima, Malawi">
@@ -148,11 +157,17 @@
                             <div class="projectCaption">
                                 Salima, Malawi
                             </div>
+                            <div class="projectDetail">
+                                <h1> Salima, Malawi </h1>
+                                <p>
+                                    about project
+                                </p>
+                            </div>
                         </div>
 
-                    </a>
+                    
 
-                    <a href="projectsPage.html" class="projectCard">
+                    
 
                         <div class="projectImage">
                             <img src="images/ewbbarrio.png" alt="Barrio 9 de Marzo, Ecuador">
@@ -160,11 +175,17 @@
                             <div class="projectCaption">
                                 Barrio 9 de Marzo, Ecuador
                             </div>
+                            <div class="projectDetail">
+                                <h1> Barrio 9 de Marzo, Ecuador </h1>
+                                <p>
+                                    about project
+                                </p>
+                            </div>
                         </div>
 
-                    </a>
+                    
 
-                    <a href="projectsPage.html" class="projectCard">
+                    
 
                         <div class="projectImage">
                             <img src="images/ewbCamaroon.png" alt="North Cameroon">
@@ -172,16 +193,22 @@
                             <div class="projectCaption">
                                 North Cameroon
                             </div>
+                            <div class="projectDetail">
+                                <h1> North Cameroon </h1>
+                                <p>
+                                    about project
+                                </p>
+                            </div>
                         </div>
 
-                    </a>
+                  
 
                 </div>
 
             </section>
 
             <!--Events Section-->
-            <section>
+            <section class = "main" id = "eventsSection">
                 <h1 class = "homeHeading">
                     Events
                 </h1>
@@ -190,18 +217,32 @@
                 <br>
                 <br>
                 <div class="eventGallery">
-                    <a href="eventsPage.html" >
+                    
                     <div class = "event_firstColumn">
                         
                         
                         <div class="polaroid rotate_right">
                             <img src="images/groupHike.png" alt="Pulpit rock" width="284" height="213">
                             <p class="caption">Group Hike</p>
+                            <div class = "eventDetail">
+                                <h1> Group Hike </h1>
+                                <p>
+                                    Detail about event
+                                </p>
                             </div>
+                        </div>
+
+
 
                         <div class="polaroid rotate_left">
                             <img src="images/ewb_eDay.jpeg" alt="Monterosso al Mare" width="284" height="213">
                             <p class="caption">E-Day</p>
+                            <div class = "eventDetail">
+                                <h1> E-Day </h1>
+                                <p>
+                                    Detail about event
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -209,11 +250,23 @@
                         <div class="polaroid rotate_left">
                             <img src="images/ewb_treeMulching.png" alt="Pulpit rock" width="284" height="213">
                             <p class="caption">Tree Mulching</p>
+                            <div class = "eventDetail">
+                                <h1> Tree Mulching </h1>
+                                <p>
+                                    Detail about event
+                                </p>
                             </div>
+                        </div>
 
                         <div class="polaroid rotate_right">
                             <img src="images/ewb_treePlanting.png" alt="Monterosso al Mare" width="284" height="213">
                             <p class="caption">Tree Planting</p>
+                            <div class = "eventDetail">
+                                <h1> Tree Planting </h1>
+                                <p>
+                                    Detail about event
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -221,9 +274,15 @@
                         <div class="polaroid rotate_right">
                             <img src="images/ewb_boardWalk.png" alt="Pulpit rock" width="284" height="213">
                             <p class="caption">BoardWalk Survey</p>
+                            <div class = "eventDetail">
+                                <h1> BoardWalk Survey </h1>
+                                <p>
+                                    Detail about event
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    </a>
+                    
                 </div>
                
             </section>
@@ -232,7 +291,7 @@
             <br>
 
             <!--support section-->
-            <Section>
+            <Section class = "main" id = "supportSection">
                 <h1 class = "homeHeading">
                     Support
                 </h1>
