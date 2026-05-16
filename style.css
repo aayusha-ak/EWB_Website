@@ -29,6 +29,7 @@ html {
   z-index: 1000;
   width:100%;
   box-sizing: border-box;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.35);
 
 }
 
@@ -78,6 +79,7 @@ a.active {
   z-index: 1000;
   width:100%;
   box-sizing: border-box;
+  box-shadow: 0px 8px 10px -6px rgba(0,0,0,0.35);
 }
 
 
@@ -102,6 +104,7 @@ a.active {
   .navContainer {
    display: block;
    cursor:pointer;
+   
    
   }
     
@@ -134,7 +137,7 @@ a.active {
   position:relative;
   display:flex;
   align-content: center;
-  margin-top: 80px;
+  margin-top: 84px;
 }
 
 .homeMainPhoto {
@@ -145,15 +148,14 @@ a.active {
   object-position: center;
   position: relative;
   
+  
 }
 
 .homeTitle {
   display:flex;
-  align-items: center;
   position: absolute;
   color: black;
   background-color: rgb(255, 255, 255, 0.3);
-  bottom: 350px;
   font-size: 25px;
   width: fit-content;
   left:50%;
@@ -161,15 +163,42 @@ a.active {
   flex-direction: column;
   font-family: Playfair Display, serif ;
   border-radius: 10px;
-  padding:5px;
+  margin-top:10px;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
 }
 
+.ewb {
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -30px;
+  
+}
+
+.uky {
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+
 h1,h2 {
+  /*
   margin:5px;
   white-space: nowrap;
   width: fit-content;
   text-transform: uppercase;
+  */
+  width: fit-content;
+  color:black;
+  text-transform: uppercase;
+  
 }
+
 
 
 .homecaption {
