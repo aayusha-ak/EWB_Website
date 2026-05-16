@@ -547,15 +547,18 @@ h1,h2 {
 }
 
 
+/************************/
+/*Events Page*/
 .eventGallery {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   
   
 }
 
-div.polaroid {
+.polaroid {
   width: 280px;
   padding: 10px 10px 20px 10px;
   border: 1px solid #BFBFBF;
@@ -564,23 +567,24 @@ div.polaroid {
   text-align: center;
   font-family: 'Podkova', serif;
   color: black;
-}
-
-div.rotate_right {
-  float: left;
-  transform: rotate(7deg);
-}
-
-div.rotate_left {
-  float: left;
-  transform: rotate(-8deg);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
     filter 0.3s ease;
 }
 
-div.polaroid:hover {
+.rotate_right {
+  float: left;
+  transform: rotate(7deg);
+}
+
+.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+  
+}
+
+.polaroid:hover {
   cursor:pointer;
   transform:scale(1.05);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
@@ -608,5 +612,22 @@ div.polaroid:hover {
   color: black;
   padding: 20px;
   box-sizing: border-box;
+  
+}
+
+@media (max-width: 700px) {
+  .eventGallery {
+    justify-content: center;
+
+  }
+
+  .rotate_left {
+    float:none;
+
+  }
+  .rotate_right {
+    float:none;
+  }
+    
   
 }
