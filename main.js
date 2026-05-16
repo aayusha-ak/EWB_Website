@@ -4,6 +4,8 @@ function ShowHide() {
     if (menu) {
       menu.classList.toggle("show");
     }
+    //when a link is clicked, hide the menu
+    
 }
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -28,9 +28,8 @@ html {
   top:0px;
   z-index: 1000;
   width:100%;
-  
-  
-  
+  box-sizing: border-box;
+
 }
 
 .ewblogo {
@@ -74,18 +73,13 @@ a.active {
 
 .hamMenu {
   display: none;
-  flex-direction: column;
+  position:fixed;
+  top:85px;
+  z-index: 1000;
+  width:100%;
+  box-sizing: border-box;
 }
-.hamMenu a {
-  color: white;
-  padding: 14px;
-  text-decoration: none;
-  font-size: 22px;
-  text-align: center;
-  font-family: 'Podkova', serif;  
-  background-color: #4e8aca;
-  
-}
+
 
 
 .navContainer{
@@ -108,12 +102,31 @@ a.active {
   .navContainer {
    display: block;
    cursor:pointer;
+   
   }
     
+  .hamMenu a {
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 22px;
+  text-align: center;
+  font-family: 'Podkova', serif;  
+  background-color: #4e8aca;
+  
+}
   .hamMenu.show {
     display:flex;
+    flex-direction: column;
+    
+  }
+
+  .hamLink:hover {
+    background-color: white;
+    color : #4e8aca;
   }
 }
+
 
 /****************************/
 /*Main Photo in the homePage*/
@@ -295,6 +308,7 @@ h1,h2 {
 
   object-fit: cover;
   display: block;
+  transition-duration: 0.3s;
 }
 
 /* caption overlay */
